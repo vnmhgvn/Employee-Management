@@ -1,0 +1,6 @@
+﻿@model IEnumerable<FinalExam.Models.Phong>
+
+@foreach (var item in Model) {
+    var url = "/TimTheoPhong/" + item.Maphong;
+    <a href="@url">@Html.DisplayFor(modelItem => item.Tenphong)</a> <label> &nbsp;l &nbsp;  </label>
+}
